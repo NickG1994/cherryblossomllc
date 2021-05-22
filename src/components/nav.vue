@@ -2,11 +2,11 @@
   <div id="nav">
     <div class="nav-container">
       <div class="left-nav">
-        <p>Cherry Blossoms Inc</p>
+        <img src="../assets/icons/logo.svg" alt="Logo"><p>Cherry Blossoms Creations</p>
       </div>
       <div class="right-nav-container">
         <div class="right-nav-content" v-for="link in links" :key="link.id">
-          <span class="img-container"> <img :src="link.img" alt=""> </span>
+          <span class="img-container"> <img :class="(link.id === 1) ? 'link-img' : 'nothing'" :src="link.img" alt=""> </span>
           <span class="links-container"><router-link :to="link.path">{{ link.title }}</router-link></span>
         </div>
       </div>
@@ -29,16 +29,23 @@ export default {
         ,
         {
           id:2,
-          title: "About",
-          path: "/about",
-          img: require('../assets/icons/About.svg')
+          title: "Products",
+          path: "/Products",
+          img: require('../assets/icons/shop.svg')
         }
         ,
         {
-          id:2,
-          title: "About",
+          id:3,
+          title: "Gallary",
           path: "/gallery",
           img: require('../assets/icons/Gallery.svg')
+        }
+        ,
+        {
+          id:4,
+          title: "About",
+          path: "/about",
+          img: require('../assets/icons/About.svg')
         }
       ]
     }
