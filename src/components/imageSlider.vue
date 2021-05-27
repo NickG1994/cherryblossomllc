@@ -8,7 +8,7 @@
     <div class="imageslider">
       <transition-group class="span" name="opacity" tag="div">
         <div class="slide" v-for="image in toBeShown" :key="image.id">
-          <img :src="image.imgSrc" :alt="image.alt">
+          <img id="lazy-load" :src="image.imgSrc" :alt="image.alt">
         </div>
       </transition-group>
     </div>
@@ -111,8 +111,31 @@ export default {
     calcNumCards(){
       return Math.ceil(this.images.length / this.cardsToShow);
     }
+  }, mounted(){
+
   }
+  
 }
+/*
+      const img = document.querySelectorAll('img');
+      console.log(img.length);
+
+      const imageOptions = {};
+
+      let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if(entry.isIntersecting) return;
+          const image = entry.target;
+          const newURL = image.getAttribute('data-src');
+          image.src = newURL;
+          observer.unobserve(image);
+        });
+      }, imageOptions);
+              
+      img.forEach((image) => {
+        observer.observe(image);
+      });
+      */
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

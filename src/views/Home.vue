@@ -1,14 +1,16 @@
 <template>
   <b-container fluid id="main-container">
-    <div class="hero-container">
+    <b-container fluid class="hero-container">
       <img id="cherry-img-1" class="cherry-img" src="../assets/img/cherry_1.svg" alt="cherry blossom">
-      <div class="inner-hero-container">
-        <div id="text-container" class="text-container-left">
+
+      <b-container class="inner-hero-container">
+        <b-container id="text-container" class="text-container-left">
           <h1>Cherry Blossoms Creations</h1>
           <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nunc commodo ligula pretium efficitur quis id nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h5>
           <a class="btn contact" href="https://www.google.com/">Contact</a>
-        </div>
-      </div>
+        </b-container>
+      </b-container>
+
       <div class="wrapper">
         <div class="button">
           <div class="icon"><img src="../assets/icons/facebook.svg" alt="FaceBook Link"></div>
@@ -23,7 +25,7 @@
           <span class="span"> <a href="">YouTube</a></span>
         </div>
       </div>
-    </div>
+    </b-container>
     <div class="section-2">
       <div class="section-2-main-container">
         <h2>Amazing Art</h2>
@@ -48,36 +50,89 @@
       <div class="section-4-main-container">
         <div class="section-4-left">
           <div class="section-4-grid" >
-            <img src="../assets/img/bg-image.jpg" alt="">
 
-            <div class="section-4-left-text-container">
-              <h3>Light Up Your Home </h3>
-              <h5>Morbi ac mollis nisl. Maecenas enim magna, congue eget auctor vitae</h5>
-              <button>Gallery</button>
+            <div class="item-wrapper item-1">
+
+              <img src="../assets/img/bg-image.jpg" alt="">
+              <div class="section-4-left-text-container">
+                <h3>Light Up Your Home </h3>
+                <h5>Morbi ac mollis nisl. Maecenas enim magna, congue eget auctor vitae</h5>
+                <button>Gallery</button>
+              </div>
+
             </div>
 
-            <div class="section-4-left-text-container">
-              <h3>Variety of Designs to choose from </h3>
-              <h5>Morbi ac mollis nisl. Maecenas enim magna, congue eget auctor vitae</h5>
-              <button>Gallery</button>
+            <div class="flip item-wrapper item-2">
+              <img src="../assets/img/bg-image.jpg" alt="">
+              <div  class="section-4-left-text-container">
+                <h3>Variety of Designs to choose from </h3>
+                <h5>Morbi ac mollis nisl. Maecenas enim magna, congue eget auctor vitae</h5>
+                <button>Gallery</button>
+              </div>
             </div>
 
-            <img src="../assets/img/bg-image.jpg" alt="">
-
-            <img src="../assets/img/bg-image.jpg" alt="">
-
-            <div class="section-4-left-text-container">
-              <h3>What we Do? </h3>
-              <h5>Morbi ac mollis nisl. Maecenas enim magna, congue eget auctor vitae</h5>
-              <button>Gallery</button>
+            <div class="item-wrapper item-3">
+              <img src="../assets/img/bg-image.jpg" alt="">
+              <div class="section-4-left-text-container">
+                <h3>What we Do? </h3>
+                <h5>Morbi ac mollis nisl. Maecenas enim magna, congue eget auctor vitae</h5>
+                <button>Gallery</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="section-5">
-      <div class="section-4-main-container">
+      <div class="section-5-main-container">
 
+        <div class="section-5-left-container">
+          <h3>Our Tools and skills</h3>
+          <div class="line"></div>
+          <p>Proin a egestas orci. Nam convallis lectus nec nulla interdum, aliquet auctor elit sodales. Aenean maximus augue pulvinar ex maximus maximus. Nam volutpat ipsum ipsum, ac maximus nibh semper ut</p>
+        </div>
+
+        <div class="section-5-right-container">
+
+          <div class="line-container">
+            <div class="line-wrapper">
+              <div class="line-wrapper-text">
+                <h4>Photoshop</h4>
+                <h5>60%</h5>
+              </div>
+              <div class="section-5-line">
+                <div class="line-fill"></div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class=" top-bottom-margin line-container">
+            <div class="line-wrapper">
+              <div class="line-wrapper-text">
+                <h4>Photoshop</h4>
+                <h5>60%</h5>
+              </div>
+              <div class="section-5-line">
+                <div class="line-fill"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="line-container">
+            <div class="line-wrapper">
+              <div class="line-wrapper-text">
+                <h4>Photoshop</h4>
+                <h5>60%</h5>
+              </div>
+              <div class="section-5-line">
+                <div class="line-fill"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
   </b-container>
